@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //1. stack memory 2. heap memory --- dynamic memory allocation : runtime , increase , decrease , del, remove 
+    //stack memory 
+    //int a[5]={5,6,7,8,9}; //static array 
+    //dynamic array 
+    //array : continous memory location ---stack, heap 
+    int how ;
+    cin>>how;
+    //array : some size : run time : dynamic array :stack
+    int a[how];
+    cout<<sizeof(a)<<endl;
+    int more;
+    cin>>more; //this doesnt support 
+    a[more];
+    cout<<sizeof(a)<<endl;
+    return 0;
+    
+    //heap --> malloc
+    //dynamic array and dynamic memory has any diffrence??
+    //dynamic memory can be allocated only using heap 
+    
+}
+
