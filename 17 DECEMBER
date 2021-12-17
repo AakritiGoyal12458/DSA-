@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std ;
+int main(){
+    
+    int x; //4 bytes 
+   
+    //memory : 1. stack (compile time) 2. heap (dynamically )
+    x=5;
+    cout<<x+1<<endl;
+    //pointer: stores address
+    cout<<x; int *p; //int* p ;
+    p=&x;
+    cout<<p<<endl; //101
+    cout<<p+1<<endl;//102 //105 ()
+    cout<<p+2<<endl;
+    cout<<p+3<<endl;
+    //int and int*
+    cout<<*p ; //derefrencing
+    
+    return 0 ;
+    
+}
+
+#include <iostream>
+using namespace std ;
+int main(){
+    
+    int y =20 ;  //scalar //vector : array , list 
+    int *p ;
+    p=&y;
+    cout<<p<<endl; 
+    cout<<*p<<endl; 
+    cout<<y/2<<endl;
+    return 0 ;
+    
+}
+
+#include <iostream>
+using namespace std ;
+int main(){
+    
+    int x[5]={2,4,6,8,10}; //static array :  size is fixed  , at compile time 
+    //        0 1 2 3 4 
+    int *p;
+    cout<<x<<endl;
+    p=&x[0];
+    cout<<p<<endl;
+    
+    cout<<*p<<endl;
+    cout<<x[0]<<endl;
+    
+    //cout<<*(++p)<<endl;
+    cout<<*(p+1)<<endl;
+    cout<<*(x+1)<<endl;
+    cout<<x[1]<<endl;
+    
+    cout<<*(p+4)<<endl;
+    return 0 ;
+    
+}
+
+QUESTIONS :
+
+1 . create an static array of 5 elements . 
+print adress of 1st element . 
+along with it print the 1st two values of your array using pointers 
+overwrite the value of 2nd element to 444
+print the new value of 2nd element 
+
+
+2. create a character array of size 6 and print the adress of all the characters using methods use used in class
