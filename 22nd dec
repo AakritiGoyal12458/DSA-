@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std ; 
+
+int main(){
+int y = (int)malloc(2*sizeof(int)) ;
+cout<<y<<endl ;
+cout<<y+1<<endl ;
+*y =5 ;
+*(y+1) = 10 ;
+*(y+2) = 12 ;
+cout<<*y<<endl ;
+cout<<*(y+1)<<endl ;
+cout<<*(y+2)<<endl ;
+
+return 0;
+}
