@@ -1,0 +1,52 @@
+//NEW AND DELETE -- c++ 
+
+//allocate with help malloc--> free --> free function --> heap memory is limited -->p=NULL  
+
+//int* y = (int*)malloc(2*sizeof(int)) ;
+#include <iostream>
+using namespace std;
+int main(){
+    int*h = new int[2];//new = looking for space from heap 
+    // 2 and 5 value 
+    *h=5;
+    *(h+1)=10;
+    cout<<h<<endl; 
+    cout<<*h<<endl;
+    delete []h;//free
+    h=NULL; 
+    cout<<h<<endl; 
+    return 0 ;
+}
+
+//dynamic array ?? continous collection of data -- stack and heap 
+// stack--int , char 
+// heap -- malloc, calloc, new,delete ; 
+//can we allocate dynamic memory with heap and stack ?? 
+//no , only with heap 
+//dynamic memory -- 
+//is dynamic memory same as dynamic array ?? //no 
+
+//HOMEWORK 
+//can we create dynamic array in c language?? without use of malloc and calloc 
+//can we create dynamic MEMORY in c language?? 
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    //5,6,7,8,9
+    //static array 
+    // int a[5]={5,6,7,8,9}; //20 bytes
+    // cout<<sizeof(a)<<endl;
+    int how;
+    cin>>how; //2 
+    int a[how];
+    //dynamic array : run time too size of array  //stack // 
+    cout<<sizeof(a)<<endl; //8
+    int more ; //4
+    cin>>more; //4
+    a[more];
+    cout<<sizeof(a)<<endl ; // 16 but we will get 8 
+    return 0 ;
+    
+}
