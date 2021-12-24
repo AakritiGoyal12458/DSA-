@@ -1,0 +1,50 @@
+
+#include <iostream>
+using namespace std; 
+//every function wil take memory from stack ;
+void company(){ //parameter
+     //local variable 
+   int x=5;
+   int y = 10 ; 
+   int z=x+y ; 
+  cout<<z; 
+    
+}
+int main()
+{
+    //local variable 
+//     int c=9;
+//     cout<<c<<endl; 
+//     cout<<"hello"<<endl;
+//   //pointers :address --> 
+//     company(2,3);//argument
+company();
+
+    return 0;
+}
+
+
+CALL BY VALUE 
+
+#include <iostream>
+using namespace std; 
+//every function wil take memory from stack ;
+//call by value
+void swap(int p , int q){ 
+     cout<<"in function " <<p<<" " <<q<<endl ; 
+     int temp ; 
+     temp = p ;
+     p=q;
+     q=temp; 
+     cout<<"in func" << p<<" "<<q <<endl;//3 and 2 
+}
+int main()
+{
+    int i, j ;
+    cin>>i ; 
+    cin>>j ; 
+    cout << "before function call i and j  " << i <<" " << j <<endl  ; 
+    swap(i,j);
+    cout << "after function call i  and j  " << i <<" " << j <<endl; 
+    return 0;
+}
