@@ -1,0 +1,100 @@
+//head-->node = data and pointer ---> NULL
+ 
+#include<bits/stdc++.h>
+using namespace std;
+class Node{
+    public:
+        int data;
+        Node *next;
+};
+
+void traversal(struct Node *n){
+    while (n!=NULL){
+        cout<<n->data<<" ";
+        n=n->next;
+    }
+}
+
+int main(){
+    Node* head = NULL ;
+    Node* second = NULL ;
+    Node* third = NULL ;
+    
+    //allocated memory in the heap 
+    head=new Node();
+    second=new Node();
+    third=new Node();
+    
+    //head | | | second | | | third | | | 
+    
+    head->data =1 ; 
+    head->next=second;
+    
+    //head | 1| 0|--> second | | | third | | | 
+    
+    second->data =2; //assign data
+    second->next=third;//link node with the third node
+    
+    //head | 1| 0|--> second |2| 0|--> third | | | 
+    third->data =3; //assign data
+    third->next=NULL;
+    
+    //| 1| 0|--> second |2| 0|--> third |3|NULL|
+    
+    //insert at begining 
+    Node * new_node=new Node();
+    new_node->data=4;
+    new_node->next =head;
+    head=newNode;
+    //insert at end 
+    Node * new_node=new Node();
+    new_node->data=4;
+    new_node->next =NULL;
+    
+    struct node *temp = head :
+    while(temp->next !=NULL){
+        temp=temp->next;
+    }
+    
+    temp->next = newNode;
+    
+    //insert at middle 
+    Node * new_node=new Node();
+    new_node->data=4;
+    struvt node *temp =head; 
+    for(int i=0;i<position,i++){
+        if(temp->next !=NULL){
+            temp = temp->next;
+        }
+    }
+    newNode->next =temp->next;
+    temp->newNode;
+    
+    traversal(head);
+    
+    return 0 ; 
+}
+
+
+0 1 2 3 
+// HEAD-    1 2 3--> NULL
+        |
+        |
+        0 
+        
+        
+//PREVIOUS NODE == NUll
+//Node * new_node=new Node();
+//add data : new_node-->data=new_data;
+
+
+
+
+
+
+0 1 2 3 
+
+
+
+
+
